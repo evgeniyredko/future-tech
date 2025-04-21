@@ -1,4 +1,4 @@
-@use '../helpers' as *;
+@use "../helpers" as *;
 
 .select {
   &__original-control {
@@ -49,10 +49,9 @@
 
       @include square(var(--size));
 
-      content: '';
-      background:
-        url('../../icons/arrow-down_white.svg')
-        center/contain no-repeat;
+      content: "";
+      background: url("./../icons/arrow-down_white.svg") center/contain
+        no-repeat;
       transition-duration: var(--transition-duration);
 
       @include laptop {
@@ -111,7 +110,7 @@
       color: var(--color-accent);
 
       &::after {
-        content: '✔';
+        content: "✔";
       }
     }
 
